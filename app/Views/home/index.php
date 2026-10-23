@@ -119,8 +119,8 @@
     <div class="col-lg-8">
         <div class="card h-100">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span class="fw-bold"><i class="bi bi-clock-history me-2 text-primary"></i>Últimas Personas Registradas</span>
-                <a href="<?= base_url('persona/listar') ?>" class="btn btn-sm btn-outline-primary">Ver todas</a>
+                <span class="fw-bold"><i class="bi bi-clock-history me-2 text-primary"></i>Personas registradas recientemente</span>
+                <a href="<?= base_url('persona/listar') ?>" class="btn btn-sm btn-outline-primary">Ver todas las personas</a>
             </div>
             <div class="card-body p-0">
                 <div class="table-responsive">
@@ -182,7 +182,7 @@
         <!-- Distribución por Sexo -->
         <div class="card mb-3">
             <div class="card-header fw-bold">
-                <i class="bi bi-pie-chart-fill me-2 text-warning"></i>Distribución por Sexo
+                <i class="bi bi-pie-chart-fill me-2 text-warning"></i>Personas por sexo
             </div>
             <div class="card-body">
                 <?php if (!empty($stats['distSexo'])): ?>
@@ -203,7 +203,7 @@
         <!-- Distribución por Estado Civil -->
         <div class="card">
             <div class="card-header fw-bold">
-                <i class="bi bi-pie-chart-fill me-2 text-danger"></i>Distribución por Estado Civil
+                <i class="bi bi-pie-chart-fill me-2 text-danger"></i>Personas por estado civil
             </div>
             <div class="card-body">
                 <?php if (!empty($stats['distEC'])): ?>
