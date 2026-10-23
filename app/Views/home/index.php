@@ -6,16 +6,16 @@
 <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
     <div>
         <h2 class="h3 fw-bold text-dark mb-1">
-            <i class="bi bi-speedometer2 text-primary me-2"></i>Panel de Control y Estadísticas
+            <i class="bi bi-speedometer2 text-primary me-2"></i>Panel de control · Grupo Meta
         </h2>
-        <p class="text-muted mb-0">Sistema integral para la administración de personas, sus catálogos y datos de contacto.</p>
+        <p class="text-muted mb-0">Bienvenido al sistema de información del Grupo Meta: administre personas, catálogos y datos de contacto desde un solo lugar.</p>
     </div>
     <div class="d-flex gap-2">
         <a href="<?= base_url('persona/add') ?>" class="btn btn-primary">
-            <i class="bi bi-person-plus-fill me-1"></i> Nueva Persona
+            <i class="bi bi-person-plus-fill me-1"></i> Registrar persona
         </a>
         <a href="<?= base_url('persona/listar') ?>" class="btn btn-outline-secondary">
-            <i class="bi bi-list-ul me-1"></i> Listar Personas
+            <i class="bi bi-list-ul me-1"></i> Ver personas
         </a>
     </div>
 </div>
