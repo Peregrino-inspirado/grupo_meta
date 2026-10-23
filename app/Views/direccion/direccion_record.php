@@ -18,7 +18,7 @@
                 <p class="text-secondary">Ingrese una nueva dirección para comenzar.</p>
                 <div>
                     <a href="<?= base_url('direccion/add') ?>" class="btn btn-info text-white">
-                        <i class="bi bi-plus-circle me-1"></i> Crear Dirección
+                        <i class="bi bi-plus-circle me-1"></i> Registrar dirección
                     </a>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="card shadow-sm">
                 <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
                     <span class="fw-bold">
-                        <i class="bi bi-geo-alt-fill me-2"></i>Ficha de Dirección #<?= esc($direccion['iddireccion']) ?>
+                        <i class="bi bi-geo-alt-fill me-2"></i>Ficha de la dirección #<?= esc($direccion['iddireccion']) ?>
                     </span>
                     <span class="badge bg-light text-info"><?= esc($direccion['tipo'] ?? 'Domicilio') ?></span>
                 </div>
@@ -70,11 +70,11 @@
                 </div>
                 <div class="card-footer bg-light d-flex justify-content-between">
                     <a href="<?= base_url('direccion/edit/' . $direccion['iddireccion']) ?>" class="btn btn-sm btn-outline-warning text-dark">
-                        <i class="bi bi-pencil-square me-1"></i> Editar
+                        <i class="bi bi-pencil-square me-1"></i> Modificar
                     </a>
                     <button type="button" class="btn btn-sm btn-outline-danger"
                             onclick="confirmarBorrado('<?= base_url('direccion/delete/' . $direccion['iddireccion']) ?>', '¿Desea eliminar la dirección #<?= esc($direccion['iddireccion']) ?>?')">
-                        <i class="bi bi-trash-fill me-1"></i> Borrar
+                        <i class="bi bi-trash-fill me-1"></i> Eliminar
                     </button>
                 </div>
             </div>
