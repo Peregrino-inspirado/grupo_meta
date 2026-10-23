@@ -6,16 +6,16 @@
     <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
         <div>
             <h5 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-heart-fill text-danger me-2"></i>Catálogo de Estados Civiles
+                <i class="bi bi-heart-fill text-danger me-2"></i>Catálogo de estados civiles registrados
             </h5>
             <small class="text-muted">Total de registros: <?= esc($total) ?></small>
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('estadocivil/add') ?>" class="btn btn-danger btn-sm">
-                <i class="bi bi-plus-circle me-1"></i> Nuevo Estado Civil
+                <i class="bi bi-plus-circle me-1"></i> Agregar estado civil
             </a>
             <a href="<?= base_url('estadocivil') ?>" class="btn btn-outline-secondary btn-sm">
-                <i class="bi bi-card-text me-1"></i> Ficha Registro
+                <i class="bi bi-card-text me-1"></i> Ir a la ficha
             </a>
         </div>
     </div>
@@ -26,7 +26,7 @@
             <div class="col-md-5">
                 <div class="input-group input-group-sm">
                     <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-                    <input type="text" name="q" class="form-control" placeholder="Buscar estado civil por nombre..." value="<?= esc($search ?? '') ?>">
+                    <input type="text" name="q" class="form-control" placeholder="Escriba el estado civil que busca..." value="<?= esc($search ?? '') ?>">
                 </div>
             </div>
             <div class="col-auto">
@@ -44,7 +44,7 @@
                 <thead>
                     <tr>
                         <th style="width: 80px;">ID</th>
-                        <th>Nombre del Estado Civil</th>
+                        <th>Estado civil</th>
                         <th>Personas Asociadas</th>
                         <th class="text-end" style="width: 170px;">Acciones</th>
                     </tr>
@@ -83,7 +83,7 @@
                     <?php else: ?>
                         <tr>
                             <td colspan="4" class="text-center py-5 text-muted">
-                                No se encontraron registros de estado civil.
+                                Aún no hay estados civiles registrados.
                             </td>
                         </tr>
                     <?php endif; ?>
