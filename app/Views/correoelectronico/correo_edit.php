@@ -7,10 +7,10 @@
         <div class="card shadow-sm">
             <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
                 <span class="fw-bold">
-                    <i class="bi bi-pencil-square me-2"></i>Editar Correo Electrónico #<?= esc($correo['idcorreoelectronico']) ?>
+                    <i class="bi bi-pencil-square me-2"></i>Modificar correo electrónico #<?= esc($correo['idcorreoelectronico']) ?>
                 </span>
                 <a href="<?= base_url('correoelectronico/actual/' . $correo['idcorreoelectronico']) ?>" class="btn btn-sm btn-light">
-                    <i class="bi bi-arrow-left me-1"></i> Volver a Ficha
+                    <i class="bi bi-arrow-left me-1"></i> Volver a la ficha
                 </a>
             </div>
 
@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <!-- Selector de Persona -->
                     <div class="mb-3">
-                        <label for="idpersona" class="form-label fw-semibold">Persona Propietaria <span class="text-danger">*</span></label>
+                        <label for="idpersona" class="form-label fw-semibold">Persona <span class="text-danger">*</span></label>
                         <select class="form-select <?= isset($errors['idpersona']) ? 'is-invalid' : '' ?>" id="idpersona" name="idpersona" required>
                             <option value="">-- Seleccione una Persona --</option>
                             <?php foreach ($personas as $p): ?>
@@ -49,7 +49,7 @@
                     <div class="row g-3">
                         <!-- Tipo de Correo -->
                         <div class="col-md-6">
-                            <label for="tipo" class="form-label fw-semibold">Tipo de Correo</label>
+                            <label for="tipo" class="form-label fw-semibold">Tipo de correo</label>
                             <select class="form-select <?= isset($errors['tipo']) ? 'is-invalid' : '' ?>" id="tipo" name="tipo">
                                 <?php $currTipo = old('tipo', $correo['tipo'] ?? 'Personal'); ?>
                                 <option value="Personal" <?= ($currTipo === 'Personal') ? 'selected' : '' ?>>Personal</option>
@@ -61,7 +61,7 @@
 
                         <!-- Fecha de Obtención -->
                         <div class="col-md-6">
-                            <label for="fechaoptencion" class="form-label fw-semibold">Fecha de Obtención / Creación</label>
+                            <label for="fechaoptencion" class="form-label fw-semibold">Fecha en que se obtuvo o creó</label>
                             <input type="date" class="form-control <?= isset($errors['fechaoptencion']) ? 'is-invalid' : '' ?>" id="fechaoptencion" name="fechaoptencion" value="<?= esc(old('fechaoptencion', $correo['fechaoptencion'])) ?>">
                             <?php if (isset($errors['fechaoptencion'])): ?>
                                 <div class="invalid-feedback"><?= esc($errors['fechaoptencion']) ?></div>
@@ -75,7 +75,7 @@
                         <i class="bi bi-x-circle me-1"></i> Cancelar
                     </a>
                     <button type="submit" class="btn btn-success fw-semibold">
-                        <i class="bi bi-check-circle-fill me-1"></i> Guardar Cambios
+                        <i class="bi bi-check-circle-fill me-1"></i> Actualizar correo
                     </button>
                 </div>
             </form>
