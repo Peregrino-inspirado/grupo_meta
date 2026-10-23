@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= esc($title ?? 'Sistema de Información - CodeIgniter 4') ?></title>
+    <title><?= esc($title ?? 'Grupo Meta · Sistema de Información') ?></title>
 
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -333,7 +333,7 @@
         <footer>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <div>
-                    <strong>Sistema de Información eysfwis</strong> &copy; <?= date('Y') ?> | Gestión de Persona, Sexo, Dirección, Correo Electrónico y Estado Civil.
+                    <strong>Sistema de Información Grupo Meta</strong> &copy; <?= date('Y') ?> | Ingeniería de Software I · Tecnología de la Información · 5to B.
                 </div>
                 <div>
                     <span class="badge bg-light text-secondary border">CodeIgniter 4 + MariaDB</span>
