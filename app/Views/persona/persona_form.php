@@ -7,10 +7,10 @@
         <div class="card shadow-sm">
             <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                 <span class="fw-bold">
-                    <i class="bi bi-person-plus-fill me-2"></i>Registrar Nueva Persona
+                    <i class="bi bi-person-plus-fill me-2"></i>Registro de una nueva persona
                 </span>
                 <a href="<?= base_url('persona') ?>" class="btn btn-sm btn-light">
-                    <i class="bi bi-arrow-left me-1"></i> Volver a Ficha
+                    <i class="bi bi-arrow-left me-1"></i> Volver a las fichas
                 </a>
             </div>
 
@@ -19,7 +19,7 @@
 
                 <div class="card-body">
                     <h6 class="text-primary text-uppercase fw-bold mb-3">
-                        <i class="bi bi-card-checklist me-1"></i> 1. Información Personal
+                        <i class="bi bi-card-checklist me-1"></i> 1. Datos personales
                     </h6>
 
                     <div class="row g-3 mb-3">
@@ -57,7 +57,7 @@
                     </div>
 
                     <h6 class="text-primary text-uppercase fw-bold mb-3 pt-3 border-top">
-                        <i class="bi bi-tag-fill me-1"></i> 2. Catálogos Asociados
+                        <i class="bi bi-tag-fill me-1"></i> 2. Sexo y estado civil
                     </h6>
 
                     <div class="row g-3 mb-4">
