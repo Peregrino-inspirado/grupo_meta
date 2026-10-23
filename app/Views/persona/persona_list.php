@@ -6,9 +6,9 @@
     <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
         <div>
             <h5 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-people-fill text-primary me-2"></i>Listado General de Personas
+                <i class="bi bi-people-fill text-primary me-2"></i>Directorio de personas
             </h5>
-            <small class="text-muted">Total de registros encontrados: <?= esc($total) ?></small>
+            <small class="text-muted">Personas registradas: <?= esc($total) ?></small>
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('persona/add') ?>" class="btn btn-primary btn-sm">
@@ -26,7 +26,7 @@
             <div class="col-md-5">
                 <div class="input-group input-group-sm">
                     <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-                    <input type="text" name="q" class="form-control" placeholder="Buscar por cédula, nombres, apellidos, sexo, estado civil..." value="<?= esc($search ?? '') ?>">
+                    <input type="text" name="q" class="form-control" placeholder="Escriba una cédula, nombre, apellido, sexo o estado civil..." value="<?= esc($search ?? '') ?>">
                 </div>
             </div>
             <div class="col-auto">
