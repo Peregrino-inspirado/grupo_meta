@@ -203,8 +203,8 @@
         <a href="<?= base_url() ?>" class="brand">
             <i class="bi bi-person-badge-fill"></i>
             <div>
-                <span class="d-block leading-tight">INFO-SISTEMA</span>
-                <small class="text-info fw-normal" style="font-size: 0.72rem;">eysfwis</small>
+                <span class="d-block leading-tight">Grupo Meta</span>
+                <small class="text-info fw-normal" style="font-size: 0.72rem;">Sistema de Información Web</small>
             </div>
         </a>
 
