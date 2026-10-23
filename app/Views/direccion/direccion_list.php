@@ -6,7 +6,7 @@
     <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
         <div>
             <h5 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-geo-alt-fill text-info me-2"></i>Listado General de Direcciones
+                <i class="bi bi-geo-alt-fill text-info me-2"></i>Directorio de direcciones
             </h5>
             <small class="text-muted">
                 Total de registros: <?= esc($total) ?>
@@ -17,10 +17,10 @@
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('direccion/add' . (!empty($idpersona) ? '/' . $idpersona : '')) ?>" class="btn btn-info text-white btn-sm">
-                <i class="bi bi-plus-circle me-1"></i> Nueva Dirección
+                <i class="bi bi-plus-circle me-1"></i> Registrar dirección
             </a>
             <a href="<?= base_url('direccion') ?>" class="btn btn-outline-secondary btn-sm">
-                <i class="bi bi-card-text me-1"></i> Ficha Registro
+                <i class="bi bi-card-text me-1"></i> Ir a la ficha
             </a>
         </div>
     </div>
@@ -31,7 +31,7 @@
             <div class="col-md-5">
                 <div class="input-group input-group-sm">
                     <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-                    <input type="text" name="q" class="form-control" placeholder="Buscar por dirección, persona, cédula..." value="<?= esc($search ?? '') ?>">
+                    <input type="text" name="q" class="form-control" placeholder="Escriba una calle, ciudad, nombre o cédula..." value="<?= esc($search ?? '') ?>">
                 </div>
             </div>
             <?php if (!empty($idpersona)): ?>
@@ -52,9 +52,9 @@
                 <thead>
                     <tr>
                         <th style="width: 70px;">ID</th>
-                        <th>Persona Propietaria</th>
+                        <th>Persona</th>
                         <th>Tipo</th>
-                        <th>Dirección Domiciliaria / Laboral</th>
+                        <th>Dirección</th>
                         <th class="text-end" style="width: 170px;">Acciones</th>
                     </tr>
                 </thead>
@@ -98,7 +98,7 @@
                     <?php else: ?>
                         <tr>
                             <td colspan="5" class="text-center py-5 text-muted">
-                                No se encontraron direcciones registradas.
+                                Todavía no hay direcciones registradas.
                             </td>
                         </tr>
                     <?php endif; ?>
