@@ -67,7 +67,7 @@
         }
 
         #sidebar .brand i {
-            color: #38bdf8;
+            color: #5eead4;
             font-size: 1.5rem;
         }
 
@@ -108,8 +108,8 @@
 
         #sidebar .nav-link.active {
             color: #ffffff;
-            background: linear-gradient(90deg, #0284c7, #0369a1);
-            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+            background: linear-gradient(90deg, #0d9488, #0f766e);
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
         }
 
         #sidebar .nav-link i {
