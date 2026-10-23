@@ -16,11 +16,11 @@
 
     <style>
         :root {
-            --ci-primary: #0d6efd;
-            --ci-primary-dark: #0a58ca;
-            --ci-sidebar-bg: #1e293b;
-            --ci-sidebar-hover: #334155;
-            --ci-sidebar-active: #0284c7;
+            --ci-primary: #0f766e;
+            --ci-primary-dark: #115e59;
+            --ci-sidebar-bg: #10343a;
+            --ci-sidebar-hover: #1c4a52;
+            --ci-sidebar-active: #0d9488;
             --ci-bg: #f8fafc;
             --ci-card-border: #e2e8f0;
         }
