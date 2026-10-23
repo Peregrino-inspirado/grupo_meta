@@ -12,10 +12,10 @@
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('persona/add') ?>" class="btn btn-primary btn-sm">
-                <i class="bi bi-person-plus-fill me-1"></i> Nueva Persona
+                <i class="bi bi-person-plus-fill me-1"></i> Registrar persona
             </a>
             <a href="<?= base_url('persona') ?>" class="btn btn-outline-secondary btn-sm">
-                <i class="bi bi-card-text me-1"></i> Ficha Registro
+                <i class="bi bi-card-text me-1"></i> Ir a la ficha
             </a>
         </div>
     </div>
@@ -46,10 +46,10 @@
                         <th style="width: 70px;">ID</th>
                         <th>Cédula</th>
                         <th>Apellidos y Nombres</th>
-                        <th>Fecha Nac.</th>
+                        <th>Fecha de nacimiento</th>
                         <th>Sexo</th>
                         <th>Estado Civil</th>
-                        <th>Contactos</th>
+                        <th>Direcciones y correos</th>
                         <th class="text-end" style="width: 170px;">Acciones</th>
                     </tr>
                 </thead>
