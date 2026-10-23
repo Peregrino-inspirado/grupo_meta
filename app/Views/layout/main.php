@@ -213,7 +213,7 @@
             <li>
                 <a href="<?= base_url() ?>" class="nav-link <?= (!isset($module) || $module === 'home') ? 'active' : '' ?>">
                     <i class="bi bi-speedometer2"></i>
-                    <span>Dashboard</span>
+                    <span>Panel principal</span>
                 </a>
             </li>
 
@@ -225,7 +225,7 @@
                 </a>
             </li>
 
-            <li class="nav-header">Catálogos Relacionados</li>
+            <li class="nav-header">Catálogos</li>
             <li>
                 <a href="<?= base_url('sexo') ?>" class="nav-link <?= (isset($module) && $module === 'sexo') ? 'active' : '' ?>">
                     <i class="bi bi-gender-ambiguous"></i>
@@ -256,7 +256,7 @@
 
         <div class="p-3 mt-auto border-top border-secondary border-opacity-25 text-center">
             <small class="text-muted d-block">CodeIgniter 4.5.1</small>
-            <span class="badge bg-success-subtle text-success mt-1">Conectado a MySQL</span>
+            <span class="badge bg-success-subtle text-success mt-1">Base de datos conectada</span>
         </div>
     </aside>
 
@@ -273,7 +273,7 @@
             <div class="d-flex align-items-center gap-3">
                 <div class="dropdown">
                     <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-plus-circle me-1"></i> Acceso Rápido
+                        <i class="bi bi-lightning-charge-fill me-1"></i> Crear nuevo
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                         <li><a class="dropdown-item" href="<?= base_url('persona/add') ?>"><i class="bi bi-person-plus me-2 text-primary"></i>Nueva Persona</a></li>
@@ -350,7 +350,7 @@
             <?= csrf_field() ?>
             <div class="modal-content">
                 <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Confirmar Eliminación</h5>
+                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Confirmar eliminación</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -362,7 +362,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-danger">
-                        <i class="bi bi-trash-fill me-1"></i> Sí, Eliminar Definitivamente
+                        <i class="bi bi-trash-fill me-1"></i> Sí, eliminar
                     </button>
                 </div>
             </div>
