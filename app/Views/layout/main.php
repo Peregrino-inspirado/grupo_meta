@@ -143,8 +143,8 @@
         /* Card Styles */
         .card {
             border: 1px solid var(--ci-card-border);
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
             background-color: #ffffff;
         }
 
@@ -159,7 +159,7 @@
         .nav-toolbar-card {
             background: #ffffff;
             border: 1px solid var(--ci-card-border);
-            border-radius: 12px;
+            border-radius: 16px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
         }
 
@@ -169,12 +169,12 @@
         }
 
         .table thead th {
-            background-color: #f1f5f9;
-            color: #475569;
+            background-color: #ecfdf5;
+            color: #0f766e;
             font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
+            font-size: 0.9rem;
+            text-transform: none;
+            letter-spacing: 0;
             border-top: none;
         }
 
