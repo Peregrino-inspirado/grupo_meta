@@ -30,7 +30,7 @@
             <div class="card h-100 shadow-sm">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                     <span class="fw-bold">
-                        <i class="bi bi-person-vcard me-2"></i>Ficha de Persona #<?= esc($persona['idpersona']) ?>
+                        <i class="bi bi-person-vcard me-2"></i>Ficha de la persona #<?= esc($persona['idpersona']) ?>
                     </span>
                     <span class="badge bg-light text-primary">Activo</span>
                 </div>
@@ -111,7 +111,7 @@
             <div class="card mb-4 shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span class="fw-bold text-dark">
-                        <i class="bi bi-geo-alt-fill text-info me-2"></i>Direcciones Registradas (<?= count($direcciones) ?>)
+                        <i class="bi bi-geo-alt-fill text-info me-2"></i>Direcciones de la persona (<?= count($direcciones) ?>)
                     </span>
                     <a href="<?= base_url('direccion/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-info text-white">
                         <i class="bi bi-plus-circle me-1"></i> Agregar Dirección
@@ -176,10 +176,10 @@
             <div class="card shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <span class="fw-bold text-dark">
-                        <i class="bi bi-envelope-at-fill text-success me-2"></i>Correos Electrónicos (<?= count($correos) ?>)
+                        <i class="bi bi-envelope-at-fill text-success me-2"></i>Correos de la persona (<?= count($correos) ?>)
                     </span>
                     <a href="<?= base_url('correoelectronico/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-success">
-                        <i class="bi bi-plus-circle me-1"></i> Agregar Correo
+                        <i class="bi bi-plus-circle me-1"></i> Añadir correo
                     </a>
                 </div>
                 <div class="card-body p-0">
