@@ -7,10 +7,10 @@
         <div class="card shadow-sm">
             <div class="card-header bg-danger text-white d-flex justify-content-between align-items-center">
                 <span class="fw-bold">
-                    <i class="bi bi-pencil-square me-2"></i>Editar Estado Civil #<?= esc($estadoCivil['idestadocivil']) ?>
+                    <i class="bi bi-pencil-square me-2"></i>Modificar estado civil #<?= esc($estadoCivil['idestadocivil']) ?>
                 </span>
                 <a href="<?= base_url('estadocivil/actual/' . $estadoCivil['idestadocivil']) ?>" class="btn btn-sm btn-light">
-                    <i class="bi bi-arrow-left me-1"></i> Volver a Ficha
+                    <i class="bi bi-arrow-left me-1"></i> Volver a la ficha
                 </a>
             </div>
 
@@ -19,7 +19,7 @@
 
                 <div class="card-body">
                     <div class="mb-3">
-                        <label for="nombre" class="form-label fw-semibold">Nombre del Estado Civil <span class="text-danger">*</span></label>
+                        <label for="nombre" class="form-label fw-semibold">Nombre del estado civil <span class="text-danger">*</span></label>
                         <input type="text" class="form-control <?= isset($errors['nombre']) ? 'is-invalid' : '' ?>" id="nombre" name="nombre" value="<?= esc(old('nombre', $estadoCivil['nombre'])) ?>" required autofocus>
                         <?php if (isset($errors['nombre'])): ?>
                             <div class="invalid-feedback"><?= esc($errors['nombre']) ?></div>
@@ -32,7 +32,7 @@
                         <i class="bi bi-x-circle me-1"></i> Cancelar
                     </a>
                     <button type="submit" class="btn btn-danger">
-                        <i class="bi bi-check-circle-fill me-1"></i> Guardar Cambios
+                        <i class="bi bi-check-circle-fill me-1"></i> Actualizar estado civil
                     </button>
                 </div>
             </form>
