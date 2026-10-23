@@ -27,14 +27,14 @@
         <div class="card h-100 border-start border-primary border-4 shadow-sm hover-shadow transition">
             <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span class="text-muted small fw-semibold text-uppercase">Personas</span>
+                    <span class="text-muted small fw-semibold text-uppercase">Personas registradas</span>
                     <div class="bg-primary bg-opacity-10 p-2 rounded text-primary">
                         <i class="bi bi-people-fill fs-4"></i>
                     </div>
                 </div>
                 <h3 class="fw-bold mb-1"><?= esc($stats['totalPersonas']) ?></h3>
                 <a href="<?= base_url('persona') ?>" class="small text-primary text-decoration-none fw-medium">
-                    Gestionar Personas <i class="bi bi-arrow-right"></i>
+                    Administrar personas <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@
         <div class="card h-100 border-start border-danger border-4 shadow-sm hover-shadow transition">
             <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span class="text-muted small fw-semibold text-uppercase">Estados Civiles</span>
+                    <span class="text-muted small fw-semibold text-uppercase">Estados civiles</span>
                     <div class="bg-danger bg-opacity-10 p-2 rounded text-danger">
                         <i class="bi bi-heart-fill fs-4"></i>
                     </div>
@@ -88,7 +88,7 @@
                 </div>
                 <h3 class="fw-bold mb-1"><?= esc($stats['totalDirecciones']) ?></h3>
                 <a href="<?= base_url('direccion') ?>" class="small text-info text-decoration-none fw-medium">
-                    Ver Direcciones <i class="bi bi-arrow-right"></i>
+                    Ir a direcciones <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -99,14 +99,14 @@
         <div class="card h-100 border-start border-success border-4 shadow-sm hover-shadow transition">
             <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span class="text-muted small fw-semibold text-uppercase">Correos Elec.</span>
+                    <span class="text-muted small fw-semibold text-uppercase">Correos electrónicos</span>
                     <div class="bg-success bg-opacity-10 p-2 rounded text-success">
                         <i class="bi bi-envelope-at-fill fs-4"></i>
                     </div>
                 </div>
                 <h3 class="fw-bold mb-1"><?= esc($stats['totalCorreos']) ?></h3>
                 <a href="<?= base_url('correoelectronico') ?>" class="small text-success text-decoration-none fw-medium">
-                    Ver Correos <i class="bi bi-arrow-right"></i>
+                    Ir a correos <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
