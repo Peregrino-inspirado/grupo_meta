@@ -71,7 +71,7 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <div class="form-text">Si no encuentra el sexo deseado, puede gestionarlo en el catálogo de Sexos.</div>
+                            <div class="form-text">¿No aparece el sexo que busca? Agréguelo desde el menú Catálogos > Sexo.</div>
                         </div>
 
                         <div class="col-md-6">
@@ -84,7 +84,7 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <div class="form-text">Puede agregar más estados civiles en su respectivo módulo.</div>
+                            <div class="form-text">¿Falta un estado civil? Agréguelo desde el menú Catálogos > Estado Civil.</div>
                         </div>
                     </div>
 
@@ -136,10 +136,10 @@
 
                 <div class="card-footer bg-light d-flex justify-content-between">
                     <a href="<?= base_url('persona') ?>" class="btn btn-secondary">
-                        <i class="bi bi-x-circle me-1"></i> Cancelar
+                        <i class="bi bi-x-circle me-1"></i> Cancelar registro
                     </a>
                     <button type="submit" class="btn btn-success">
-                        <i class="bi bi-check-circle-fill me-1"></i> Guardar Persona
+                        <i class="bi bi-check-circle-fill me-1"></i> Guardar persona
                     </button>
                 </div>
             </form>
